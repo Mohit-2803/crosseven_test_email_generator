@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosseven Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-envelope"></i>
+                <h1>Crosseven Email Generator</h1>
+            </div>
+            <p class="subtitle">Generate test emails for your team quickly and easily</p>
+        </div>
+
+        <div class="card">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="nameInput">
+                        <i class="fas fa-user"></i>
+                        Enter Name
+                    </label>
+                    <input type="text" id="nameInput" placeholder="e.g. john.doe" autocomplete="off">
+                </div>
+
+                <button id="generateBtn" class="generate-btn">
+                    <i class="fas fa-magic"></i>
+                    Generate Email
+                </button>
+            </div>
+
+            <div class="result-section" id="resultSection">
+                <div class="result-header">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Generated Email</span>
+                </div>
+
+                <div class="email-display">
+                    <span id="generatedEmail"></span>
+                    <button id="copyBtn" class="copy-btn" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check"></i>
+                    Copied to clipboard!
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-card">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                    <h3>Format</h3>
+                    <p>[name]+[5-digit-number]@crosseven.com</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h3>Usage</h3>
+                    <p>Perfect for testing and development purposes</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built for Crosseven Team • <span id="currentYear"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

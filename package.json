@@ -1,0 +1,30 @@
+{
+  "name": "crosseven-email-generator",
+  "version": "1.0.0",
+  "description": "A modern email generator for Crosseven team testing purposes",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step needed for static site'",
+    "preview": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/crosseven-email-generator.git"
+  },
+  "keywords": [
+    "email",
+    "generator",
+    "testing",
+    "crosseven",
+    "development"
+  ],
+  "author": "Crosseven Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
